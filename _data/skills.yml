@@ -1,0 +1,54 @@
+- category: Languages & Frameworks
+  color: yellow
+  icon: code
+  items:
+    - Java
+    - Python
+    - Spring Boot
+    - FastAPI
+    - React JS
+    - PyTorch
+    - OpenCV
+    - JavaScript
+    - Bash
+
+- category: AI & ML
+  color: sage
+  icon: brain
+  items:
+    - LangChain
+    - RAG
+    - ChromaDB
+    - HuggingFace
+    - Google Gemini
+    - Tavily AI
+    - Pandas
+    - NumPy
+    - Scikit-learn
+
+- category: Cloud & Infrastructure
+  color: pink
+  icon: cloud
+  items:
+    - AWS EC2
+    - DynamoDB
+    - IoT Core
+    - Lambda
+    - S3 / SQS / Kinesis
+    - GCP
+    - Firebase
+    - Docker
+    - Git
+
+- category: Data & Protocols
+  color: lavender
+  icon: database
+  items:
+    - PostgreSQL
+    - Apigee
+    - MQTT
+    - Protocol Buffers
+    - Linux/Unix
+    - Redis
+    - Elasticsearch
+    - Grafana

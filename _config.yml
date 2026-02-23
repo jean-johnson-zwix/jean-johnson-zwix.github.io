@@ -1,0 +1,30 @@
+title: Jean Anna Johnson
+description: Software Engineer · MS Software Engineering · Cloud & AI
+url: "https://jean-johnson-zwix.github.io"
+baseurl: ""
+
+author:
+  name: Jean Anna Johnson
+  email: jajoh151@asu.edu
+  linkedin: jeanannajohnson
+  github: jean-johnson-zwix
+  location: Tempe, AZ
+
+collections:
+  projects:
+    output: false
+    sort_by: order
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git

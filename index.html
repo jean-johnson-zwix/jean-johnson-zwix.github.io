@@ -1,0 +1,276 @@
+---
+layout: default
+title: Software Engineer
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__inner">
+
+    <!-- Left: eyebrow + name -->
+    <div class="hero__left">
+      <p class="hero__eyebrow">Available Jun 2026</p>
+      <h1 class="hero__name">Jean<br><em>Johnson</em></h1>
+    </div>
+
+    <!-- Right: bio + actions -->
+    <div class="hero__right">
+      <p class="hero__role">
+        Software Engineer
+        <span class="sep">·</span>
+        MS SWE (Data Science)
+        <span class="sep">·</span>
+        Cloud &amp; AI
+      </p>
+      <p class="hero__bio">
+        4 years building cloud-native systems on AWS — from IoT telemetry pipelines 
+        to Agentic AI. Currently at ASU pursuing my Masters in Software Engineering (Data Science).
+        Java ☕ was my first love but these days, I have been hanging out with python a lot! 😉
+        I love building projects that solve actual problems (mostly my problems!)
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn--outline">Let's Connect</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS — reads from _data/skills.yml -->
+<div class="skills-section" id="skills">
+  <div class="skills-inner">
+    <div class="section-header reveal">
+      <p class="section-label">Technical Skills</p>
+      <h2 class="section-title">The tools I <em>build with</em></h2>
+    </div>
+
+    <div class="skills-grid">
+      {% for group in site.data.skills %}
+      <div class="skill-card reveal" data-color="{{ group.color }}">
+        <p class="skill-card__title">{{ group.category }}</p>
+        <div class="skill-tags">
+          {% for item in group.items %}
+          <span class="tag">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects-section" id="projects">
+  <div class="projects-inner">
+    <div class="section-header reveal">
+      <p class="section-label section-label--lavender">Projects</p>
+      <h2 class="section-title">Things I've <em class="lavender">built &amp; explored</em></h2>
+    </div>
+
+    <!-- Featured project cards -->
+    <div class="projects-grid">
+      {% assign featured = site.projects | where: "featured", true | sort: "order" %}
+      {% for project in featured %}
+      <div class="project-card reveal" data-color="{{ project.color }}">
+        <div class="project-card__accent"></div>
+        <div class="project-card__body">
+          <p class="project-card__badge">{{ project.badge }}</p>
+          <h3 class="project-card__title">{{ project.title }}</h3>
+          <p class="project-card__desc">{{ project.content | strip_html }}</p>
+          {% if project.image and project.image != "" %}
+            <div class="project-card__image">
+              <img src="{{ project.image }}" alt="{{ project.title }} architecture">
+            </div>
+          {% endif %}
+          {% if project.video and project.video != "" %}
+              <div class="project-card__video">
+                <iframe 
+                  src="https://www.youtube.com/embed/{{ project.video }}" 
+                  frameborder="0" 
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+          {% endif %}
+          {% if project.highlight %}
+          <p class="project-card__highlight">{{ project.highlight }}</p>
+          {% endif %}
+          <div class="project-card__stack">
+            {% for tech in project.stack %}
+            <span class="tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+          <div class="project-card__links">
+            {% if project.github and project.github != "" %}
+            <a href="{{ project.github }}" target="_blank" class="project-link project-link--primary">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            {% endif %}
+            {% if project.demo and project.demo != "" %}
+            <a href="{{ project.demo }}" target="_blank" class="project-link">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Other projects expandable -->
+    <div class="other-projects reveal">
+      <button class="other-projects__toggle" onclick="toggleOtherProjects()">
+        <span id="toggle-label">+ Show More Projects</span>
+      </button>
+
+      <div class="other-projects-grid" id="other-projects-list" style="display:none;">
+        {% assign others = site.projects | where: "featured", false | sort: "order" %}
+        {% for project in others %}
+        <div class="project-card" data-color="{{ project.color }}">
+          <div class="project-card__accent"></div>
+          <div class="project-card__body">
+            <p class="project-card__badge">{{ project.badge }}</p>
+            <h3 class="project-card__title">{{ project.title }}</h3>
+            <p class="project-card__desc">{{ project.content | strip_html }}</p>
+            {% if project.image and project.image != "" %}
+            <div class="project-card__image">
+              <img src="{{ project.image }}" alt="{{ project.title }} architecture">
+            </div>
+            {% endif %}
+            {% if project.video and project.video != "" %}
+              <div class="project-card__video">
+                <iframe 
+                  src="https://www.youtube.com/embed/{{ project.video }}" 
+                  frameborder="0" 
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+            {% endif %}
+            {% if project.highlight %}
+            <p class="project-card__highlight">{{ project.highlight }}</p>
+            {% endif %}
+            <div class="project-card__stack">
+              {% for tech in project.stack %}
+              <span class="tag">{{ tech }}</span>
+              {% endfor %}
+            </div>
+            <div class="project-card__links">
+              {% if project.github and project.github != "" %}
+              <a href="{{ project.github }}" target="_blank" class="project-link project-link--primary">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              {% endif %}
+              {% if project.demo and project.demo != "" %}
+              <a href="{{ project.demo }}" target="_blank" class="project-link">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Collaboration banner -->
+    <div class="collab-banner">
+      <div class="collab-card collab-card--yellow reveal">
+        <span class="collab-card__icon">🤝</span>
+        <p class="collab-card__title">Open to Collaborate</p>
+        <p class="collab-card__desc">
+          Got an interesting problem in distributed systems, computer vision, or AI agents? 
+          I love building with people who care about the details. Let's make something cool.
+        </p>
+        <a href="mailto:jajoh151@asu.edu?subject=Collaboration%20Idea" class="collab-card__link">
+          Reach Out →
+        </a>
+      </div>
+      <div class="collab-card collab-card--pink reveal">
+        <span class="collab-card__icon">💼</span>
+        <p class="collab-card__title">For Recruiters</p>
+        <p class="collab-card__desc">
+          Seeking full-time SWE roles starting May 2026. Strong in cloud-native backend, 
+          IoT/streaming data pipelines, and ML engineering. Based in Tempe, AZ — open to relocation.
+        </p>
+        <a href="mailto:jajoh151@asu.edu?subject=SWE%20Opportunity" class="collab-card__link">
+          Get In Touch →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="section-header reveal">
+    <p class="section-label section-label--sage">Education</p>
+    <h2 class="section-title">Where I'm <em class="sage">learning</em></h2>
+  </div>
+
+  <div class="education-grid">
+    <div class="edu-card reveal">
+      <p class="edu-card__degree">MS Software Engineering</p>
+      <p class="edu-card__school">Arizona State University, Tempe, AZ</p>
+      <p class="edu-card__meta">Data Science Track · Aug 2024 – May 2026</p>
+      <span class="edu-card__gpa">GPA: 3.89 / 4.0</span>
+    </div>
+    <div class="edu-card reveal">
+      <p class="edu-card__degree">B.Tech (Hons) Computer Science &amp; Engineering</p>
+      <p class="edu-card__school">Rajagiri School of Engineering &amp; Technology, Kerala, India</p>
+      <p class="edu-card__meta">Jun 2016 – May 2020</p>
+      <span class="edu-card__gpa">GPA: 8.22 / 10.0</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+  <div class="contact-inner">
+
+    <div class="contact-photo-wrap">
+      <div class="contact-photo-ring">
+        <img src="/assets/images/jean-photo.jpg" alt="Jean Anna Johnson" class="contact-photo">
+      </div>
+      <p class="contact-photo-caption">
+        <span class="contact-photo-dot"></span>
+        Open to opportunities · Jun 2026
+      </p>
+    </div>
+
+    <div class="contact-content">
+    <h2 class="contact-title">Let's build something <em>great</em></h2>
+    <p class="contact-sub">
+      Whether you're a recruiter with an exciting role, or a developer with a wild idea — 
+      my inbox is open. I respond within 24 hours.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:jajoh151@asu.edu" class="contact-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        jajoh151@asu.edu
+      </a>
+      <a href="https://linkedin.com/in/jeanannajohnson" target="_blank" class="contact-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/jean-johnson-zwix" target="_blank" class="contact-chip">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+    <a href="mailto:jajoh151@asu.edu" class="btn btn--pink" style="display:inline-flex;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      Say Hello
+    </a>
+  </div>
+</div>
