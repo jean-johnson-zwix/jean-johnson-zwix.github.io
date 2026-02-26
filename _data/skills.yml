@@ -10,6 +10,7 @@
     - PyTorch
     - OpenCV
     - JavaScript
+    - HTML/CSS
     - Bash
 
 - category: AI & ML
@@ -37,6 +38,7 @@
     - S3 / SQS / Kinesis
     - GCP
     - Firebase
+    - Netlify
     - Docker
     - Git
 

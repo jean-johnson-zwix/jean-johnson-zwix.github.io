@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 title: Real-Time Posture Analysis Tool
 badge: "🏆 First Prize · Voxel51 Hackathon"
 color: yellow
