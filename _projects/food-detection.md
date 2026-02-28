@@ -14,7 +14,7 @@ stack:
   - YOLOv8
   - TensorRT
   - OpenCV
-order: 4
+order: 6
 ---
 
 Fine-tuned YOLOv8 on the UEC Food-100 dataset and optimized inference speed using TensorRT FP16 quantization. Integrated with the Ultralytics backend for serving predictions.

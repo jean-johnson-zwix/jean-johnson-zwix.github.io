@@ -14,7 +14,7 @@ stack:
   - Pandas
   - NumPy
   - Streamlit
-order: 2
+order: 3
 ---
 
 Deep learning salary predictor trained on 260K US Gov  H1B records. 

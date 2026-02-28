@@ -14,7 +14,7 @@ stack:
   - RoBERTa
   - ResNet-50
   - AWS
-order: 3
+order: 4
 ---
 
 Built a multimodal sentiment classifier on the MVSA dataset using cross-modal attention and gated fusion. Finetuned RoBERTa for text and ResNet-50 for images, fused with a learned gating mechanism.
