@@ -7,7 +7,7 @@ category: Computer Vision
 highlight: Won first prize at Voxel51 Hackathon
 github: https://github.com/jean-johnson-zwix/posture_estimation
 demo: ""
-video: "U6l5qtZZcTo
+video: "U6l5qtZZcTo"
 stack:
   - Python
   - OpenCV
