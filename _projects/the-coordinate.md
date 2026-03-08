@@ -13,7 +13,7 @@ stack:
   - GCP
   - Agentic AI
   - LLM
-order: 7
+order: 8
 ---
 
 Extended Agent-S2 with an initial calibration layer for improved UI grounding to create a fully autonomous agent for multi-step computer tasks.

@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 title: Compensation Buddy — MLP Salary Predictor
 badge: "🧠 Deep Learning"
 color: lavender
@@ -14,7 +14,7 @@ stack:
   - Pandas
   - NumPy
   - Streamlit
-order: 3
+order: 7
 ---
 
 Deep learning salary predictor trained on 260K US Gov  H1B records. 

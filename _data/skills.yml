@@ -8,6 +8,7 @@
     - FastAPI
     - React JS
     - PyTorch
+    - PyTorch Geometric
     - OpenCV
     - JavaScript
     - HTML/CSS
@@ -18,8 +19,13 @@
   icon: brain
   items:
     - LangChain
+    - LangGraph
     - RAG
+    - Agentic AI
+    - LLM Evaluation
+    - MLflow
     - ChromaDB
+    - Qdrant
     - HuggingFace
     - Google Gemini
     - Tavily AI
@@ -36,10 +42,14 @@
     - IoT Core
     - Lambda
     - S3 / SQS / Kinesis
-    - GCP
+    - GCP BigQuery
+    - GCP Cloud Run
+    - GCP Artifact Registry
+    - Workload Identity Federation
     - Firebase
     - Netlify
     - Docker
+    - GitHub Actions
     - Git
 
 - category: Data & Protocols
@@ -47,10 +57,10 @@
   icon: database
   items:
     - PostgreSQL
-    - Apigee
-    - MQTT
-    - Protocol Buffers
-    - Linux/Unix
+    - MongoDB
     - Redis
     - Elasticsearch
+    - Protocol Buffers
+    - MQTT
     - Grafana
+    - Linux/Unix
