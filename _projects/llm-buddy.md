@@ -1,6 +1,6 @@
 ---
 featured: true
-title: LLM Evaluation & Benchmarking Platform
+title: LLM Buddy - LLM Evaluation & Benchmarking Platform
 badge: "MLOps"
 color: blue
 category: MLOps / GenAI
