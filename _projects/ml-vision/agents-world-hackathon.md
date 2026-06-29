@@ -7,7 +7,7 @@ category: ML & Vision
 highlight: "FiftyOne plugin combining real-time facial landmark detection with AI illusion image generation"
 github: https://github.com/jean-johnson-zwix/agents_world_hackathon_project
 demo: ""
-image: ""
+image: "/assets/images/ml-vision/agents-world-hackathon.png"
 stack:
   - Python
   - FiftyOne

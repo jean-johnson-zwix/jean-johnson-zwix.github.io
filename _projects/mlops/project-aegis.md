@@ -7,7 +7,7 @@ category: MLOps
 highlight: "AWS IoT SiteWise + Greengrass V2 telemetry platform with GenAI diagnostics on alarm — ~$10/mo"
 github: https://github.com/jean-johnson-zwix/project_aegis
 demo: ""
-image: ""
+image: "/assets/images/mlops/project-aegis.png"
 stack:
   - AWS IoT SiteWise
   - Greengrass V2

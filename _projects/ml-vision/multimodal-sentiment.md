@@ -7,6 +7,7 @@ category: ML & Vision
 highlight: "Val Macro-F1: 0.63 on MVSA dataset"
 github: https://github.com/jean-johnson-zwix/multimodal-sentiment-analysis
 demo: ""
+image: "/assets/images/ml-vision/multimodal-sentiment.png"
 video: "fQ7b1QPJfOE"
 stack:
   - Python

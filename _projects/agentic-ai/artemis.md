@@ -7,7 +7,7 @@ category: Agentic AI / LLM
 highlight: "3-layer AI detection pipeline monitoring 96 offshore assets across 175 sensors in real time"
 github: https://github.com/jean-johnson-zwix/aznn_hackazona_2026
 demo: ""
-image: "/assets/images/artemis_dashboard.png"
+image: "/assets/images/agentic-ai/artemis.png"
 stack:
   - Python
   - FastAPI

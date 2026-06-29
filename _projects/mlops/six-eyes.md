@@ -7,7 +7,7 @@ category: MLOps
 highlight: "End-to-end MLOps pipeline predicting which Arxiv papers will trend — daily ingestion, monthly retraining, weekly drift reports"
 github: https://github.com/jean-johnson-zwix/six-eyes
 demo: ""
-image: ""
+image: "/assets/images/mlops/six-eyes.png"
 stack:
   - Go
   - Python

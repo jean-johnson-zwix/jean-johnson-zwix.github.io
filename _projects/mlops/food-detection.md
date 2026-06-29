@@ -7,6 +7,7 @@ category: MLOps
 highlight: "mAP@0.5 = 0.659 · TensorRT FP16 optimized"
 github: https://github.com/jean-johnson-zwix/food_detection
 demo: ""
+image: "/assets/images/mlops/food-detection.png"
 video: "d4i9Wt9uG34"
 stack:
   - Python

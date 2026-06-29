@@ -7,7 +7,7 @@ category: MLOps
 highlight: "4-phase distributed face recognition pipeline on AWS — from EC2 autoscaling to IoT Greengrass edge inference"
 github: https://github.com/jean-johnson-zwix/cloud_face_recognition
 demo: ""
-image: ""
+image: "/assets/images/mlops/cloud-face-recognition.png"
 stack:
   - Python
   - AWS Lambda

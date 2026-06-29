@@ -7,6 +7,7 @@ category: MLOps
 highlight: "End-to-end SageMaker pipeline with drift monitoring and auto-retraining"
 github: https://github.com/jean-johnson-zwix/loan_rate_predictor
 demo: "https://jean-johnson-zwix.github.io/loan_rate_predictor/user-dashboard/"
+image: "/assets/images/mlops/loan-rate-predictor.png"
 stack:
   - Python
   - AWS SageMaker

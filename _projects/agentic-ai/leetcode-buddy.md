@@ -7,6 +7,7 @@ category: Agentic AI / LLM
 highlight: "AI-powered leetcode study tracker with automatic GitHub commits"
 github: https://github.com/jeanannajohnson/leetcode_buddy
 demo: "https://ubiquitous-malabi-b28842.netlify.app/"
+image: "/assets/images/agentic-ai/leetcode-buddy.png"
 video: "9eVd1t7jxrE"
 stack:
   - Vanilla JS

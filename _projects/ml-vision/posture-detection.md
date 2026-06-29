@@ -7,6 +7,7 @@ category: ML & Vision
 highlight: Won first prize at Voxel51 Hackathon
 github: https://github.com/jean-johnson-zwix/posture_estimation
 demo: ""
+image: "/assets/images/ml-vision/posture-detection.png"
 video: "U6l5qtZZcTo"
 stack:
   - Python

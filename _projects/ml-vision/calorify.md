@@ -7,7 +7,7 @@ category: ML & Vision
 highlight: "Calorie estimation from food images using deep learning"
 github: https://github.com/jean-johnson-zwix/calorify
 demo: ""
-image: ""
+image: "/assets/images/ml-vision/calorify.png"
 stack:
   - Python
   - Computer Vision

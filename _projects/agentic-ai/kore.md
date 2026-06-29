@@ -7,7 +7,7 @@ category: Agentic AI / LLM
 highlight: "LLM-powered PCOS subtype classifier with gamified daily coaching and bloodwork extraction"
 github: https://github.com/jean-johnson-zwix/femhackaz_uncyst
 demo: ""
-image: ""
+image: "/assets/images/agentic-ai/kore.png"
 stack:
   - Python
   - FastAPI

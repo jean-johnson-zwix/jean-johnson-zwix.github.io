@@ -7,7 +7,7 @@ category: Agentic AI / LLM
 highlight: "Open-source case management platform with AI-powered intake, transcription, and semantic search"
 github: https://github.com/jean-johnson-zwix/nonprofit_client_and_case_management
 demo: "https://amor-et-cura.vercel.app"
-image: "/assets/images/amor_et_cura_architecture.png"
+image: "/assets/images/agentic-ai/amor-et-cura.png"
 stack:
   - Next.js 16
   - TypeScript

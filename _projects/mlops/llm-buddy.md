@@ -7,7 +7,7 @@ category: MLOps
 highlight: "Automated LLM evaluation pipeline with live GCP leaderboard"
 github: https://github.com/jean-johnson-zwix/llm_buddy
 demo: "https://llm-benchmarker-dashboard-738128790851.us-central1.run.app"
-image: "/assets/images/llm_buddy_architecture.png"
+image: "/assets/images/mlops/llm-buddy.png"
 stack:
   - Python
   - Gemini 2.5 Flash

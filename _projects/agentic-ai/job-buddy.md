@@ -7,7 +7,7 @@ category: Agentic AI / LLM
 highlight: "Multi-phase autonomous agent with RAG and Gmail integration"
 github: https://github.com/jean-johnson-zwix/job_buddy
 demo: ""
-image: "/assets/images/job_buddy_architecture.png"
+image: "/assets/images/agentic-ai/job-buddy.png"
 stack:
   - Python
   - LangChain

@@ -7,7 +7,7 @@ category: Agentic AI / LLM
 highlight: "MCP server giving coding agents grounded Arm64 optimization tools — perf analysis, NEON intrinsics, dependency audits"
 github: https://github.com/jean-johnson-zwix/arm-code-mcp
 demo: ""
-image: ""
+image: "/assets/images/agentic-ai/arm-code-mcp.png"
 stack:
   - Python
   - Model Context Protocol

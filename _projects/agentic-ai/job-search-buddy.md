@@ -7,7 +7,7 @@ category: Agentic AI / LLM
 highlight: "Autonomous LangGraph pipeline that scores, ranks, and delivers daily job matches"
 github: https://github.com/jean-johnson-zwix/job_search_buddy
 demo: ""
-image: "/assets/images/job_search_buddy_architecture.png"
+image: "/assets/images/agentic-ai/job-search-buddy.png"
 stack:
   - Python
   - LangGraph

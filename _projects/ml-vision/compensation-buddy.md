@@ -7,6 +7,7 @@ category: ML & Vision
 highlight: "$14,897 MAE on 260K US government records"
 github: https://github.com/jean-johnson-zwix/compensation_buddy
 demo: "https://compensationbuddy.streamlit.app/"
+image: "/assets/images/ml-vision/compensation-buddy.png"
 video: "6iXYifCIAJQ"
 stack:
   - Python
