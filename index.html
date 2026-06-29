@@ -43,20 +43,12 @@ x
 <!-- SKILLS — reads from _data/skills.yml -->
 <div class="skills-section" id="skills">
   <div class="skills-inner">
-    <div class="section-header reveal">
       <p class="section-label">Technical Skills</p>
-      <h2 class="section-title">The tools I <em>build with</em></h2>
-    </div>
-
-    <div class="skills-grid">
+      <div class="skills-grid">
       {% for group in site.data.skills %}
       <div class="skill-card reveal" data-color="{{ group.color }}">
         <p class="skill-card__title">{{ group.category }}</p>
-        <div class="skill-tags">
-          {% for item in group.items %}
-          <span class="tag">{{ item }}</span>
-          {% endfor %}
-        </div>
+        <p class="skill-card__items">{{ group.items | join: " · " }}</p>
       </div>
       {% endfor %}
     </div>
@@ -75,8 +67,8 @@ x
     <!-- Domain cards grid -->
     <div class="domain-grid">
       {% assign all_projects = site.projects | sort: "order" %}
-      {% assign domains = "Agentic AI / LLM,ML & Vision,MLOps" | split: "," %}
-      {% assign domain_colors = "lavender,pink,sage" | split: "," %}
+      {% assign domains = "Agentic AI / LLM,MLOps,ML & Vision" | split: "," %}
+      {% assign domain_colors = "lavender,sage,pink" | split: "," %}
       {% for domain in domains %}
         {% assign color = domain_colors[forloop.index0] %}
         {% assign domain_projects = all_projects | where: "category", domain %}
@@ -187,7 +179,7 @@ x
       <p class="edu-card__degree">MS Software Engineering</p>
       <p class="edu-card__school">Arizona State University, Tempe, AZ</p>
       <p class="edu-card__meta">Data Science Track · Aug 2024 – May 2026</p>
-      <span class="edu-card__gpa">GPA: 3.89 / 4.0</span>
+      <span class="edu-card__gpa">GPA: 3.93 / 4.0</span>
     </div>
     <div class="edu-card reveal">
       <p class="edu-card__degree">B.Tech (Hons) Computer Science &amp; Engineering</p>

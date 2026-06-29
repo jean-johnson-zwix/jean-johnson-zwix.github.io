@@ -252,24 +252,23 @@ body::before {
 .skills-section {
   background: var(--bg-surface);
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 5.5rem 2.5rem;
+  padding: 2rem 2.5rem 1rem;
 }
 .skills-inner { max-width: var(--max-width); margin: 0 auto; }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
 }
 .skill-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.75rem;
-  transition: border-color 0.3s, transform 0.3s;
+  border-radius: 8px;
+  padding: 1.25rem;
   position: relative;
   overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
 }
 .skill-card::before {
   content: '';
@@ -280,31 +279,21 @@ body::before {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.skill-card:hover { border-color: var(--border-hover); transform: translateY(-3px); }
+.skill-card:hover { border-color: var(--border-hover); transform: translateY(-2px); }
 .skill-card:hover::before { opacity: 1; }
 .skill-card__title {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent, var(--text-secondary));
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.6rem;
 }
-.skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.tag {
+.skill-card__items {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
-  padding: 0.25rem 0.65rem;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border);
-  border-radius: 3px;
+  font-size: 0.7rem;
   color: var(--sand);
-  transition: all 0.2s;
-}
-.tag:hover {
-  background: rgba(245,230,66,0.08);
-  border-color: rgba(245,230,66,0.25);
-  color: var(--yellow);
+  line-height: 1.7;
 }
 
 /* ============================================================ EXPERIENCE */
@@ -351,9 +340,8 @@ body::before {
 /* ============================================================ PROJECTS */
 .projects-section {
   background: var(--bg-surface);
-  border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 6rem 2.5rem;
+  padding: 3rem 2.5rem 6rem;
 }
 .projects-inner { max-width: var(--max-width); margin: 0 auto; }
 .projects-grid {
