@@ -2,65 +2,73 @@
   color: yellow
   icon: code
   items:
-    - Java
     - Python
-    - Spring Boot
-    - FastAPI
-    - React JS
-    - PyTorch
-    - PyTorch Geometric
-    - OpenCV
+    - Java
+    - Go
+    - TypeScript
     - JavaScript
-    - HTML/CSS
-    - Bash
+    - React
+    - Next.js
+    - FastAPI
+    - Spring Boot
+    - Streamlit
+    - Tailwind CSS
 
 - category: AI & ML
   color: sage
   icon: brain
   items:
+    - Agentic AI
     - LangChain
     - LangGraph
     - RAG
-    - Agentic AI
     - LLM Evaluation
-    - MLflow
+    - Gemini
+    - Groq
+    - Llama
+    - PyTorch
+    - OpenCV
+    - MediaPipe
+    - YOLOv8
+    - XGBoost
     - ChromaDB
-    - Qdrant
+    - pgvector
     - HuggingFace
-    - Google Gemini
-    - Tavily AI
     - Pandas
     - NumPy
-    - Scikit-learn
 
-- category: Cloud & Infrastructure
+- category: Cloud & MLOps
   color: pink
   icon: cloud
   items:
+    - AWS Lambda
     - AWS EC2
+    - Greengrass
+    - IoT SiteWise
     - DynamoDB
-    - IoT Core
-    - Lambda
-    - S3 / SQS / Kinesis
-    - GCP BigQuery
-    - GCP Cloud Run
-    - GCP Artifact Registry
-    - Workload Identity Federation
-    - Firebase
-    - Netlify
+    - SQS
+    - EventBridge
+    - BigQuery
+    - Cloud Run
     - Docker
     - GitHub Actions
-    - Git
+    - MLflow
+    - Prefect
+    - DVC
+    - Evidently
+    - Supabase
 
 - category: Data & Protocols
   color: lavender
   icon: database
   items:
     - PostgreSQL
+    - SQLite
     - MongoDB
+    - GraphQL
+    - MQTT
     - Redis
     - Elasticsearch
     - Protocol Buffers
-    - MQTT
     - Grafana
-    - Linux/Unix
+    - Linux

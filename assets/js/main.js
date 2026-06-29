@@ -63,15 +63,21 @@ if (eyebrow) {
   setTimeout(type, 600);
 }
 
-function toggleOtherProjects() {
-  const list = document.getElementById('other-projects-list');
-  const label = document.getElementById('toggle-label');
+// Project list items → per-project modal
+document.querySelectorAll('.domain-card__project[data-project]').forEach(li => {
+  li.addEventListener('click', () => {
+    const modal = document.getElementById('project-' + li.dataset.project);
+    if (!modal) return;
+    modal.querySelectorAll('iframe[data-src]').forEach(iframe => {
+      iframe.src = iframe.dataset.src;
+      iframe.removeAttribute('data-src');
+    });
+    modal.showModal();
+  });
+});
 
-  if (list.style.display === 'none') {
-    list.style.display = 'grid';
-    label.textContent = '− Hide Projects';
-  } else {
-    list.style.display = 'none';
-    label.textContent = '+ Show More Projects';
-  }
-}
+// Close buttons + backdrop click for all project modals
+document.querySelectorAll('.project-modal').forEach(modal => {
+  modal.querySelector('.domain-modal__close').addEventListener('click', () => modal.close());
+  modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
+});
