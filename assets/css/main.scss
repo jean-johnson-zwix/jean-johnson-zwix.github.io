@@ -538,10 +538,14 @@ body::before {
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
-.domain-card__project:nth-child(4n+1) .domain-card__project-title { color: var(--yellow); }
-.domain-card__project:nth-child(4n+2) .domain-card__project-title { color: var(--pink); }
-.domain-card__project:nth-child(4n+3) .domain-card__project-title { color: var(--lavender); }
-.domain-card__project:nth-child(4n+4) .domain-card__project-title { color: var(--sage); }
+.domain-card__project:nth-child(4n+1) .domain-card__project-title,
+.domain-card__project:nth-child(4n+1) .project-icon { color: var(--yellow); }
+.domain-card__project:nth-child(4n+2) .domain-card__project-title,
+.domain-card__project:nth-child(4n+2) .project-icon { color: var(--pink); }
+.domain-card__project:nth-child(4n+3) .domain-card__project-title,
+.domain-card__project:nth-child(4n+3) .project-icon { color: var(--lavender); }
+.domain-card__project:nth-child(4n+4) .domain-card__project-title,
+.domain-card__project:nth-child(4n+4) .project-icon { color: var(--sage); }
 .domain-card__project-tagline {
   font-size: 0.88rem;
   color: var(--sand);
